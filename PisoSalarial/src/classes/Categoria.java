@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Categoria {
+	private Integer id;
 	private Piso piso;
 	private MesAno mesAno;
 	private Classe classe;
@@ -51,6 +52,13 @@ public class Categoria {
 	}
 	public List<Funcionario> getFuncionario() {
 		return funcionario;
+	}
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 	
 }
