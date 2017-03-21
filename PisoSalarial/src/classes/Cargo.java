@@ -15,7 +15,7 @@ public class Cargo {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 }
