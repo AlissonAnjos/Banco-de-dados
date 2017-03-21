@@ -14,7 +14,7 @@ public class Classe {
 	public String getSigla() {
 		return sigla;
 	}
-	public void setSigla(String sigla) {
+	public void setSigla(Integer sigla) {
 		this.sigla = sigla;
 	}
 	
