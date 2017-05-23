@@ -12,11 +12,12 @@ public class Endereco {
 	@Id
 	private String cep;
 	private String logradouro;
-	private String tipoLog;
 	@ManyToOne
 	@JoinColumn(name="id_bairro")
 	private Bairro bairro;
-	
+	@ManyToOne
+	@JoinColumn(name="id_tipoLog")
+	private TipoLog tipoLog;
 	
 	public String getCep() {
 		return cep;
@@ -30,17 +31,18 @@ public class Endereco {
 	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
 	}
-	public String getTipoLog() {
-		return tipoLog;
-	}
-	public void setTipoLog(String tipoLog) {
-		this.tipoLog = tipoLog;
-	}
+	
 	public Bairro getBairro() {
 		return bairro;
 	}
 	public void setBairro(Bairro bairro) {
 		this.bairro = bairro;
+	}
+	public TipoLog getTipoLog() {
+		return tipoLog;
+	}
+	public void setTipoLog(TipoLog tipoLog) {
+		this.tipoLog = tipoLog;
 	}
 	
 
