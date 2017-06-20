@@ -67,7 +67,7 @@ public class LogradouroDao {
 	     }		
 	}
 		 		
-	public List<Logradouro> ListaPorNome(String nomeOuCep) {
+	public List<Logradouro> porCepOuNome(String nomeOuCep) {
 		try {
 			List<Logradouro> logradouros = new ArrayList<Logradouro>();
 			PreparedStatement stmt = (PreparedStatement) connection.prepareStatement("select * from logradouros where nome like ? or cep like ?");
