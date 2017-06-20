@@ -19,7 +19,7 @@ public class ConsultarCepLogic implements Logica {
 		
 		
 			LogradouroDao dao = new LogradouroDao();
-			List<Logradouro> logradouros = dao.ListaPorNome(insercao);
+			List<Logradouro> logradouros = dao.porCepOuNome(insercao);
 			req.setAttribute("logradouros", logradouros);
 			
 			BairroDao bairrodao = new BairroDao();
